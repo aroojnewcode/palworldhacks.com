@@ -25,22 +25,7 @@
 /site.webmanifest
   Cache-Control: public, max-age=86400
 
-/sitemap.xml
+/*.xml
   Cache-Control: public, max-age=86400
   Content-Type: application/xml; charset=utf-8
-
-/sitemap-index.xml
-  Cache-Control: public, max-age=86400
-  Content-Type: application/xml; charset=utf-8
-
-/sitemap-pages.xml
-  Cache-Control: public, max-age=86400
-  Content-Type: application/xml; charset=utf-8
-
-/sitemap-blog.xml
-  Cache-Control: public, max-age=86400
-  Content-Type: application/xml; charset=utf-8
-
-/sitemap-forum.xml
-  Cache-Control: public, max-age=86400
-  Content-Type: application/xml; charset=utf-8
+  X-Robots-Tag: noindex, nofollow

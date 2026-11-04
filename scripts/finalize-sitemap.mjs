@@ -146,9 +146,12 @@ const indexXml = `<?xml version="1.0" encoding="UTF-8"?>
 `;
 
 fs.writeFileSync(path.join(dist, 'sitemap-index.xml'), indexXml, 'utf8');
-/** Legacy URL: index only (avoids duplicating every URL in a monolithic urlset + child files). */
-fs.writeFileSync(path.join(dist, 'sitemap.xml'), indexXml, 'utf8');
-writeUrlset(path.join(dist, 'sitemap-0.xml'), entries);
+
+// Remove Astro monolith + legacy duplicate so GSC only uses the index + 3 child files you submit manually.
+for (const legacy of ['sitemap.xml', 'sitemap-0.xml']) {
+  const legacyPath = path.join(dist, legacy);
+  if (fs.existsSync(legacyPath)) fs.unlinkSync(legacyPath);
+}
 
 console.log(
   `Sitemap finalized: ${entries.length} unique URLs (${pageEntries.length} pages, ${blogEntries.length} blog, ${forumEntries.length} forum)`,
