@@ -1,0 +1,35 @@
+---
+interface Props {
+  eyebrow: string;
+  title: string;
+  desc?: string;
+  titleId?: string;
+  centered?: boolean;
+  wide?: boolean;
+  /** Prefer a single H1 per page — use h2 for secondary section headers. */
+  headingLevel?: 'h1' | 'h2';
+}
+
+const {
+  eyebrow,
+  title,
+  desc,
+  titleId,
+  centered = false,
+  wide = false,
+  headingLevel = 'h1',
+} = Astro.props;
+const HeadingTag = headingLevel;
+---
+
+<header
+  class:list={[
+    'section-header space-y-0',
+    wide && 'section-header--wide',
+    centered && 'mx-auto text-center',
+  ]}
+>
+  <p class="section-header__eyebrow">{eyebrow}</p>
+  <HeadingTag id={titleId} class="section-header__title">{title}</HeadingTag>
+  {desc ? <p class="section-header__subtitle">{desc}</p> : null}
+</header>

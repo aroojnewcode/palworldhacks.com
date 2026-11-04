@@ -1,0 +1,43 @@
+---
+import { ROUTES } from '../utils/path';
+import { checkoutPath } from '../config/checkout';
+import { externalLinkProps } from '../utils/externalLink';
+import { Button } from '@/components/starwind/button';
+
+interface LinkItem {
+  href: string;
+  label: string;
+}
+
+interface Props {
+  title?: string;
+  links?: LinkItem[];
+}
+
+const defaultLinks: LinkItem[] = [
+  { href: ROUTES.products, label: 'Shop Palworld cheat products' },
+  { href: '/products/palworld-cheats/elite/', label: 'Buy Elite ESP & aimbot' },
+  { href: '/products/palworld-cheats/utilities/', label: 'Compare utilities' },
+  { href: ROUTES.blog, label: 'Buy guides & tier tips' },
+  { href: ROUTES.faq, label: 'Pre-purchase FAQ' },
+  { href: ROUTES.reviews, label: 'Buyer reviews' },
+];
+
+const { title = 'Shop Palworld cheats & guides', links = defaultLinks } = Astro.props;
+const checkout = checkoutPath('palworld');
+const checkoutAttrs = externalLinkProps(checkout);
+---
+
+<aside class="mt-12 rounded-xl border border-border bg-muted/20 p-6" aria-labelledby="seo-related-links-title">
+  <h2 id="seo-related-links-title" class="text-lg font-semibold normal-case text-foreground">{title}</h2>
+  <ul class="mt-4 grid gap-2 sm:grid-cols-2">
+    {links.map((item) => (
+      <li>
+        <a href={item.href} class="text-sm text-primary hover:underline">{item.label}</a>
+      </li>
+    ))}
+  </ul>
+  <div class="mt-6">
+    <Button as="a" href={checkout} variant="primary" size="sm" {...checkoutAttrs}>Get access</Button>
+  </div>
+</aside>

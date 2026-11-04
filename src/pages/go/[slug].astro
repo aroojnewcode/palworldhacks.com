@@ -1,0 +1,33 @@
+---
+import { CHECKOUT_SLUGS, CHECKOUT_SLUG_TO_PRODUCT, checkoutExternalUrl } from '../../config/checkout';
+
+export function getStaticPaths() {
+  return Object.values(CHECKOUT_SLUGS).map((slug) => ({ params: { slug } }));
+}
+
+const slug = Astro.params.slug ?? '';
+const product = CHECKOUT_SLUG_TO_PRODUCT[slug];
+
+if (!product) {
+  return Astro.redirect('/404/');
+}
+
+const destination = checkoutExternalUrl(product);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content={`0;url=${destination}`} />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Redirecting to secure checkout…</title>
+    <link rel="canonical" href={destination} />
+  </head>
+  <body>
+    <p>Redirecting to secure checkout… <a href={destination}>Continue</a></p>
+    <script is:inline define:vars={{ destination }}>
+      window.location.replace(destination);
+    </script>
+  </body>
+</html>

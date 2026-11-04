@@ -1,0 +1,8 @@
+﻿User-agent: *
+Allow: /
+
+Disallow: /go/
+
+Sitemap: https://palworldhacks.com/sitemap-index.xml
+
+# RSS: https://palworldhacks.com/rss.xml

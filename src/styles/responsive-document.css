@@ -1,0 +1,43 @@
+/* Inlined in BaseLayout <style> — phone / tablet / desktop breakpoints for document layout. */
+
+@media (max-width: 639px) {
+  #main-content {
+    overflow-x: clip;
+  }
+
+  .section-shell {
+    padding-inline: 1rem;
+  }
+
+  .skip-link {
+    max-width: calc(100vw - 1.5rem);
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .section-shell {
+    padding-inline: 1.25rem;
+  }
+
+  .section-header__subtitle {
+    font-size: 0.9375rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #main-content > :first-child:not(#hero) {
+    padding-top: var(--floating-nav-clearance);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-header--wide .section-header__subtitle {
+    max-width: 48rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

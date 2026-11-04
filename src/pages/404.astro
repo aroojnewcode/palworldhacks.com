@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/icons/Icon.astro';
+import { Button } from '@/components/starwind/button';
+import { checkoutPath } from '../config/checkout';
+import { ROUTES } from '../utils/path';
+---
+
+<BaseLayout
+  title="Palworld Hacks 404 | Page Not Found"
+  description="This Palworld Hacks page could not be found. Browse undetected Palworld ESP, aimbot products and buy guides on palworldhacks.com."
+  noindex={true}
+>
+  <section class="py-16 md:py-24">
+    <div class="mx-auto max-w-lg px-5 text-center">
+      <p class="text-sm font-semibold uppercase tracking-wider text-primary">404</p>
+      <h1 class="mt-3 text-3xl font-bold uppercase md:text-4xl">Palworld Hacks page not found</h1>
+      <p class="mt-4 text-muted-foreground">
+        That Palworld Hacks URL does not exist or may have moved. Return home or shop ESP, aimbot and utility products.
+      </p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+        <Button as="a" href={ROUTES.home} variant="primary">
+          Back to home
+          <Icon name="arrowRight" size={17} />
+        </Button>
+        <Button as="a" href={ROUTES.products} variant="outline">Shop Palworld products</Button>
+        <Button as="a" href={checkoutPath('palworld')} variant="outline">Buy Elite cheats</Button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

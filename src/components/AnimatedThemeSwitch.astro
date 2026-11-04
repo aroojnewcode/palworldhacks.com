@@ -1,0 +1,61 @@
+---
+interface Props {
+  class?: string;
+  ariaLabel?: string;
+  size?: 'default' | 'sm' | 'md';
+}
+
+const { class: className, ariaLabel = 'Toggle light and dark mode', size = 'default' } = Astro.props;
+---
+
+<label
+  class:list={[
+    'theme-switch',
+    size === 'sm' && 'theme-switch--sm',
+    size === 'md' && 'theme-switch--md',
+    className,
+  ]}
+>
+  <input
+    type="checkbox"
+    class="theme-switch__checkbox"
+    aria-label={ariaLabel}
+    data-sw-theme-control
+    data-theme-on="dark"
+    data-theme-off="light"
+  />
+  <div class="theme-switch__container">
+    <div class="theme-switch__clouds" aria-hidden="true"></div>
+    <div class="theme-switch__stars-container" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M135.808 3.007C135.808 3.007 135.808 0 133.339 0C130.872 0 130.872 3.007 130.872 3.007C130.872 3.007 127.872 3.007 127.872 5.476C127.872 7.945 130.872 7.945 130.872 7.945C130.872 7.945 130.872 10.945 133.339 10.945C135.808 10.945 135.808 7.945 135.808 7.945C135.808 7.945 138.808 7.945 138.808 5.476C138.808 3.007 135.808 3.007 135.808 3.007ZM31.127 0C28.658 0 28.658 3.007 28.658 3.007C28.658 3.007 25.658 3.007 25.658 5.476C25.658 7.945 28.658 7.945 28.658 7.945C28.658 7.945 28.658 10.945 31.127 10.945C33.595 10.945 33.595 7.945 33.595 7.945C33.595 7.945 36.595 7.945 36.595 5.476C36.595 3.007 33.595 3.007 33.595 3.007C33.595 3.007 33.595 0 31.127 0ZM59.123 35.505C56.654 35.505 56.654 38.512 56.654 38.512C56.654 38.512 53.654 38.512 53.654 40.981C53.654 43.45 56.654 43.45 56.654 43.45C56.654 43.45 56.654 46.45 59.123 46.45C61.591 46.45 61.591 43.45 61.591 43.45C61.591 43.45 64.591 43.45 64.591 40.981C64.591 38.512 61.591 38.512 61.591 38.512C61.591 38.512 61.591 35.505 59.123 35.505ZM87.119 16.502C84.65 16.502 84.65 19.509 84.65 19.509C84.65 19.509 81.65 19.509 81.65 21.978C81.65 24.447 84.65 24.447 84.65 24.447C84.65 24.447 84.65 27.447 87.119 27.447C89.587 27.447 89.587 24.447 89.587 24.447C89.587 24.447 92.587 24.447 92.587 21.978C92.587 19.509 89.587 19.509 89.587 19.509C89.587 19.509 89.587 16.502 87.119 16.502ZM10.639 22.003C8.17 22.003 8.17 25.01 8.17 25.01C8.17 25.01 5.17 25.01 5.17 27.479C5.17 29.948 8.17 29.948 8.17 29.948C8.17 29.948 8.17 32.948 10.639 32.948C13.107 32.948 13.107 29.948 13.107 29.948C13.107 29.948 16.107 29.948 16.107 27.479C16.107 25.01 13.107 25.01 13.107 25.01C13.107 25.01 13.107 22.003 10.639 22.003ZM114.615 41.507C112.146 41.507 112.146 44.514 112.146 44.514C112.146 44.514 109.146 44.514 109.146 46.983C109.146 49.452 112.146 49.452 112.146 49.452C112.146 49.452 112.146 52.452 114.615 52.452C117.083 52.452 117.083 49.452 117.083 49.452C117.083 49.452 120.083 49.452 120.083 46.983C120.083 44.514 117.083 44.514 117.083 44.514C117.083 44.514 117.083 41.507 114.615 41.507Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </div>
+    <div class="theme-switch__circle-container">
+      <div class="theme-switch__sun-moon-container">
+        <div class="theme-switch__moon">
+          <div class="theme-switch__spot"></div>
+          <div class="theme-switch__spot"></div>
+          <div class="theme-switch__spot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</label>
+
+<script>
+  import { initThemeController } from '@starwind-ui/astro/theme';
+
+  const setupThemeController = () => {
+    initThemeController();
+  };
+
+  setupThemeController();
+  document.addEventListener('astro:after-swap', setupThemeController);
+  document.addEventListener('starwind:init', setupThemeController);
+</script>
