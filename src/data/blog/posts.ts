@@ -4,7 +4,7 @@ import { palworldBlogImage } from '../../config/media';
 export const blogPosts: BlogPostFull[] = [
   {
     tag: "Guides",
-    title: "Palworld console codes vs live-server loaders: what works",
+    title: "Palworld console codes vs live-server loaders: what works | Hacks",
     slug: "cheat-codes",
     image: palworldBlogImage('cheat-codes'),
     desc: "Admin console codes only work where you are admin. See what works on Official servers and when a private loader with ESP and aimbot is the right buy.",
@@ -54,7 +54,7 @@ export const blogPosts: BlogPostFull[] = [
   },
   {
     tag: "Guides",
-    title: "From practice commands to live Palworld ESP & aimbot",
+    title: "From practice commands to live Palworld ESP & aimbot | Hacks",
     slug: "console-tips",
     image: palworldBlogImage('console-tips'),
     desc: "Outgrown private-server practice? Compare undetected ESP and aimbot tiers for live PvP—Lite, Pro and Elite with secure checkout.",
@@ -144,7 +144,7 @@ export const blogPosts: BlogPostFull[] = [
   },
   {
     tag: "Features",
-    title: "Cheat features by tier: ESP, aimbot, no recoil & skins",
+    title: "Palworld cheat features by tier: ESP, aimbot, no recoil & skins",
     slug: "features",
     image: palworldBlogImage('features'),
     desc: "Feature guide: Player ESP, Loot ESP, Aimbot, No Recoil, FOV hack and Skin Changer by Lite, Pro and Elite tier—compare modules before checkout.",
@@ -343,7 +343,7 @@ export const blogPosts: BlogPostFull[] = [
   },
   {
     tag: "Setup",
-    title: "Buy Palworld aimbot & no recoil: Pro tier combat tools",
+    title: "Buy Palworld aimbot & no recoil: Pro tier combat tools | Hacks",
     slug: "aimbot",
     image: palworldBlogImage('aimbot'),
     desc: "Buy Palworld aimbot and no recoil with Pro tier. See what Aimbot, Soft Aim, Bone Select and No Recoil do, then compare tiers and get access.",
@@ -578,7 +578,7 @@ export const blogPosts: BlogPostFull[] = [
   },
   {
     tag: "Guides",
-    title: "Checkout buy guide: Lite, Pro & Elite (2026)",
+    title: "Palworld checkout buy guide: Lite, Pro & Elite (2026)",
     slug: "buy-guide",
     image: palworldBlogImage('buy-guide'),
     desc: "Step-by-step buy guide: choose Lite, Pro or Elite, pay at secure checkout and unlock your portal. The 2026 walkthrough from tier pick to first launch.",
@@ -616,7 +616,7 @@ export const blogPosts: BlogPostFull[] = [
   },
   {
     tag: "Setup",
-    title: "Buy Pro aimbot bone select & weapon profiles",
+    title: "Buy Pro aimbot bone select & weapon profiles | Palworld Hacks",
     slug: "bones",
     image: palworldBlogImage('bones'),
     desc: "Buy Pro for aimbot bone select and per-weapon recoil profiles on AK, LR-300, MP5 and bolt. See example profiles and get access.",

@@ -9,9 +9,9 @@ export const en: Translations = {
   site: {
     name: 'Palworld Hacks',
     domain: 'palworldhacks.com',
-    title: 'Buy Palworld Hacks & Cheats 2026 | Undetected Pal ESP & Aimbot',
+    title: 'Pal Esp – Buy Palworld Hacks & Cheats 2026 | Palworld Hacks',
     description:
-      'Shop undetected Palworld cheats for Steam PC—player ESP, loot ESP, soft aim, no recoil and stream-proof overlays. Compare Lite, Pro and Elite at palworldhacks.com.',
+      'Shop undetected Palworld cheats for Steam PC—player ESP, loot ESP, soft aim, no recoil and stream-proof overlays. Compare Lite, Pro and Elite at.',
     discord: PRIMARY_CHECKOUT_PATH,
   },
   nav: [
@@ -25,7 +25,7 @@ export const en: Translations = {
   hero: {
     status: 'Palworld — anti-cheat build online',
     eyebrow: 'Undetected Palworld Hacks & Cheats',
-    title: 'Palworld Hacks — Pal ESP, Aimbot & Base Tools for Steam PC',
+    title: 'Undetected Palworld Cheats 2026 — Pal ESP, Aimbot & Steam PC Tools',
     subtitle:
       'Buy undetected Palworld cheats for co-op and PvP on Steam—Pal ESP, loot and base ESP, soft aim and no recoil. Compare Lite, Pro and Elite, then checkout for instant loader access.',
     ctaPrimary: 'Get access',
@@ -315,7 +315,7 @@ export const en: Translations = {
     eyebrow: 'Blog',
     title: 'Palworld Cheat Buy Guides',
     subtitle: 'Tier comparison guides, ESP and aimbot module explainers, and checkout walkthroughs—pick a plan with confidence.',
-    latestTitle: 'Buy Guides & Checkout Tips for Steam PC',
+    latestTitle: 'Checkout – Lite & Elite ESP and Aimbot Modules',
     latestSubtitle: 'Transactional guides to help you choose a tier and complete secure checkout for ESP, aimbot and utilities.',
     filterAll: 'All articles',
     sortLabel: 'Sort by',
@@ -572,7 +572,7 @@ export const en: Translations = {
   },
   faq: {
     eyebrow: 'FAQ',
-    title: 'Buying FAQ — Tiers, Checkout & EAC Risk',
+    title: 'Palworld FAQ — Tiers, Checkout & EAC Risk',
     subtitle: 'Clear answers on Palworld cheat tiers, EAC risk, Windows support and how checkout delivery works.',
     items: [
       {
@@ -626,7 +626,7 @@ export const en: Translations = {
   },
   legalPages: {
     about: {
-      title: 'About Our Cheats Store',
+      title: 'About Our Cheats Store — Steam PC Tools',
       description:
         'Meet the team behind palworldhacks.com—the cheats store for undetected ESP, aimbot and Steam PC utilities, with update-day delivery and Discord help after checkout.',
       sections: [

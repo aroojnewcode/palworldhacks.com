@@ -10,9 +10,9 @@ export interface PageSeoEntry {
 
 export const PAGE_SEO: Record<string, PageSeoEntry> = {
   '/': {
-    title: 'Buy Palworld Hacks & Cheats 2026 | Undetected Pal ESP & Aimbot',
+    title: 'Pal Esp – Buy Palworld Hacks & Cheats 2026 | Palworld Hacks',
     description:
-      'Shop undetected Palworld cheats for Steam PC—Pal ESP, loot ESP, soft aim, no recoil and stream-proof overlays. Compare Lite, Pro and Elite at palworldhacks.com.',
+      'Shop undetected Palworld cheats for Steam PC—Pal ESP, loot ESP, soft aim, no recoil and stream-proof overlays. Compare Lite, Pro and Elite at.',
   },
   '/products/palworld-cheats/': {
     title: 'All Palworld Cheat Products | Lite, Pro, Elite Hub',
@@ -55,9 +55,9 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
       'Cheat utility comparison for Steam PC—HWID Spoofer vs UGC recovery use cases, feature lists and product pages. Skin Changer details live on Unlock All.',
   },
   '/blog/': {
-    title: 'Buy Guides & Checkout Tips | Lite, Pro, Elite',
+    title: 'Checkout – ESP and aimbot modules | Palworld Hacks',
     description:
-      'Step-by-step buy guides and checkout tips—tier picks, ESP and aimbot modules, HWID recovery after bans, and secure payment flow at palworldhacks.com.',
+      'Checkout walkthroughs for Palworld cheats—secure payment, tier picks, ESP and aimbot modules. Lite, Pro and Elite guides at palworldhacks.com.',
   },
   '/forum/': {
     title: 'Buyer Forum Q&A | ESP, Radar & Spoofer Help',
@@ -70,7 +70,7 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
       'Read verified Palworld Hacks reviews for Elite ESP and aimbot, HWID Spoofer, UGC recovery and Skin Changer—real buyer ratings before you checkout.',
   },
   '/faq/': {
-    title: 'Buying FAQ | Palworld Tiers, Checkout & Ban Risk',
+    title: 'Faq – Palworld Tiers, Checkout & Ban Risk | Palworld Hacks',
     description:
       'FAQ before you buy: Windows and Steam setup, Lite vs Pro vs Elite, ban risk, checkout delivery and HWID resets—clear answers on palworldhacks.com.',
   },
@@ -80,9 +80,24 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
       'Legal terms for purchasing Palworld cheat licenses on palworldhacks.com—delivery, personal-use limits, refunds, anti-cheat risk and acceptable product use.',
   },
   '/about/': {
-    title: 'About Our Cheats Store | Steam PC Tools',
+    title: 'Cheats Store – Meet the palworldhacks | Palworld Hacks',
     description:
       'Meet the palworldhacks.com cheats store team—tiers, utilities, update-day loader updates and Discord help after checkout on Steam PC.',
+  },
+  '/blog/aimbot/': {
+    title: 'Buy Palworld aimbot & no recoil: Pro tier | Hacks',
+    description:
+      'Buy Palworld aimbot and no recoil with Pro tier. See Aimbot, Soft Aim, Bone Select and No Recoil, then compare tiers and checkout.',
+  },
+  '/blog/cheat-codes/': {
+    title: 'Palworld console codes vs live-server load | Hacks',
+    description:
+      'Admin console codes only work where you are admin. See what works on Official servers and when a private loader with ESP and aimbot is the right buy.',
+  },
+  '/blog/console-tips/': {
+    title: 'From practice commands to live Palworld ES | Hacks',
+    description:
+      'Outgrown private-server practice? Compare undetected ESP and aimbot tiers for live PvP—Lite, Pro and Elite with secure checkout.',
   },
   '/support/': {
     title: 'Palworld Hacks Discord Support | Loader Help Tickets',
