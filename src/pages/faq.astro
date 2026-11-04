@@ -6,6 +6,7 @@ import { breadcrumbSchema, faqPageSchema, webPageSchema } from '../utils/schema'
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SiteFaqSection from '../components/SiteFaqSection.astro';
 import SectionHeader from '../components/SectionHeader.astro';
+import { t } from '../i18n';
 
 const seo = resolvePageSeo('/faq/');
 const breadcrumbs = [
@@ -35,7 +36,7 @@ const faqs = getAllFaqs();
       <div class="mt-6">
         <SectionHeader
           eyebrow="Palworld help center"
-          title="Buying FAQ — Tiers, Checkout & EAC Risk"
+          title={t.faq.title}
           desc="This FAQ answers common pre-purchase questions—tiers, checkout, ban risk, Windows/Steam setup and HWID tools—in one place."
           titleId="faq-page-title"
         />

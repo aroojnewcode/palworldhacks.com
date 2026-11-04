@@ -144,7 +144,7 @@ export const blogPosts: BlogPostFull[] = [
   },
   {
     tag: "Features",
-    title: "Palworld cheat features by tier: ESP, aimbot, no recoil & skins",
+    title: 'Palworld Hacks cheat features by tier: ESP, aimbot, no recoil & skins',
     slug: "features",
     image: palworldBlogImage('features'),
     desc: "Feature guide: Player ESP, Loot ESP, Aimbot, No Recoil, FOV hack and Skin Changer by Lite, Pro and Elite tier—compare modules before checkout.",
@@ -578,7 +578,7 @@ export const blogPosts: BlogPostFull[] = [
   },
   {
     tag: "Guides",
-    title: "Palworld checkout buy guide: Lite, Pro & Elite (2026)",
+    title: "Palworld checkout buy guide: Lite, Pro & Elite (2026) | Hacks",
     slug: "buy-guide",
     image: palworldBlogImage('buy-guide'),
     desc: "Step-by-step buy guide: choose Lite, Pro or Elite, pay at secure checkout and unlock your portal. The 2026 walkthrough from tier pick to first launch.",

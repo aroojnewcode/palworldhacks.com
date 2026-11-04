@@ -38,8 +38,8 @@ const tagIcon = (tag: string): IconName => blogTagIcons[tag] ?? 'tag';
   description={seo.description}
   jsonLd={[
     collectionPageSchema({
-      name: t.blog.title,
-      description: t.blog.subtitle,
+      name: seo.title,
+      description: seo.description,
       url: '/blog/',
     }),
     breadcrumbSchema(breadcrumbs),

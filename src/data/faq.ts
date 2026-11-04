@@ -30,8 +30,8 @@ function link(text: string, href: string): string {
 }
 
 const elite = link('Palworld Elite', productPath('elite'));
-const lite = link('Lite tier (ESP & radar)', ROUTES.products);
-const pro = link('Pro tier (aimbot & no recoil)', ROUTES.products);
+const lite = link('Lite tier (ESP & radar)', productPath('lite'));
+const pro = link('Pro tier (aimbot & no recoil)', productPath('pro'));
 const productsHub = link('Palworld cheat products', ROUTES.products);
 const hwid = link('HWID Spoofer', productPath('hwid-spoofer'));
 const ugc = link('UGC', productPath('ugc'));
