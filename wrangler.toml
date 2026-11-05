@@ -1,9 +1,7 @@
-# Static Astro site: Wrangler runs `npm run build` before deploy (creates `dist/`).
+# Cloudflare Workers static assets (CI runs `npm run build` before `wrangler deploy`).
+# assets.html_handling must be: auto-trailing-slash | force-trailing-slash | drop-trailing-slash | none
 name = "palworldhacks-com"
-compatibility_date = "2026-10-26"
-
-[build]
-command = "npm run build"
+compatibility_date = "2026-11-05"
 
 [assets]
 directory = "./dist"
