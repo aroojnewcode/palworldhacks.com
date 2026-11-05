@@ -44,6 +44,7 @@ const LINK_SETS: Record<string, SeoContextLink[]> = {
     { href: '/forum/', label: 'Community forum Q&A index' },
     { href: '/forum/pre-install/', label: 'Forum thread: pre-install checklist' },
     { href: '/about/', label: 'Meet palworldhacks store background' },
+    { href: '/sitemap.xml', label: 'Site XML sitemap index for crawlers' },
     { href: '/sitemap-blog.xml', label: 'Blog posts XML sitemap file' },
   ],
   '/blog/aimbot/': [
@@ -113,7 +114,7 @@ const LINK_SETS: Record<string, SeoContextLink[]> = {
 };
 
 const DEFAULT_LINKS: SeoContextLink[] = [
-  { href: '/products/palworld-cheats/', label: 'Palworld cheat products directory' },
+    { href: '/products/palworld-cheats/', label: 'Palworld cheat tier comparison hub' },
   { href: '/blog/', label: 'Checkout and tier blog guides hub' },
   { href: '/forum/', label: 'Buyer forum threads directory' },
   { href: '/faq/', label: 'Tier and checkout FAQ index page' },

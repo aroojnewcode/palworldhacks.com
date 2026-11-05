@@ -29,15 +29,15 @@ function link(text: string, href: string): string {
   return `<a href="${normalizeInternalPath(href)}">${text}</a>`;
 }
 
-const elite = link('Palworld Elite', productPath('elite'));
-const lite = link('Lite tier (ESP & radar)', productPath('lite'));
-const pro = link('Pro tier (aimbot & no recoil)', productPath('pro'));
-const productsHub = link('Palworld cheat products', ROUTES.products);
-const hwid = link('HWID Spoofer', productPath('hwid-spoofer'));
-const ugc = link('UGC', productPath('ugc'));
-const skin = link('Skin Changer', productPath('unlock-all'));
-const faqPage = link('full FAQ', ROUTES.faq);
-const blog = link('blog guides', ROUTES.blog);
+const tierLite = (label: string) => link(label, productPath('lite'));
+const tierPro = (label: string) => link(label, productPath('pro'));
+const tierElite = (label: string) => link(label, productPath('elite'));
+const productsDirectory = link('Palworld cheat products directory', ROUTES.products);
+const hwidLink = (label: string) => link(label, productPath('hwid-spoofer'));
+const ugcLink = (label: string) => link(label, productPath('ugc'));
+const skinLink = (label: string) => link(label, productPath('unlock-all'));
+const faqIndex = link('complete pre-purchase FAQ index', ROUTES.faq);
+const blogHub = link('Palworld checkout blog hub', ROUTES.blog);
 
 const guideFeatures = link('Palworld cheats features guide', blogPostPath('features'));
 const guideLiteVsPro = link('Lite vs Pro guide', blogPostPath('lite-vs-pro'));
@@ -93,14 +93,14 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'products',
     icon: 'faqProductsPage',
     q: 'Where are products and utilities listed?',
-    a: `${productsHub} lists cheat tiers, ${hwid}, ${ugc}, and ${skin} with feature lists and checkout via our partner.`,
+    a: `${productsDirectory} lists cheat tiers, ${hwidLink('HWID Spoofer utility listing')}, ${ugcLink('UGC recovery workspace product')}, and ${skinLink('Unlock All Skin Changer page')} with feature lists and checkout via our partner.`,
   },
   {
     id: 'what-is-esp',
     topic: 'esp',
     icon: 'faqWhatIsEsp',
     q: 'What is Palworld ESP and what does it show?',
-    a: `Player ESP draws boxes, names, health, distance and skeletons through walls and terrain. Loot ESP marks crates, barrels, stashes, ore nodes and dropped items. ${lite} covers the full awareness overlay. ${pro} and ${elite} add aim assist on top. Setup details are in the ${guideEsp}.`,
+    a: `Player ESP draws boxes, names, health, distance and skeletons through walls and terrain. Loot ESP marks crates, barrels, stashes, ore nodes and dropped items. ${tierLite('Lite ESP and radar product page')} covers the full awareness overlay. ${tierPro('Pro aimbot and recoil listing')} and ${tierElite('Elite full-suite listing')} add aim assist on top. Setup details are in the ${guideEsp}.`,
     scopes: ['lite', 'pro', 'elite'],
   },
   {
@@ -108,14 +108,14 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'esp',
     icon: 'faqEspVsScripts',
     q: 'What is the difference between ESP and aimbot?',
-    a: `ESP and radar are information overlays—they never move your mouse. Aimbot, Soft Aim and No Recoil are aim assist modules on ${pro} and ${elite}. You can run ESP-only on ${lite} and keep a much quieter footprint on a server.`,
+    a: `ESP and radar are information overlays—they never move your mouse. Aimbot, Soft Aim and No Recoil are aim assist modules on ${tierPro('Pro combat tier with aim assist')} and ${tierElite('Elite suite with farm helpers')}. You can run ESP-only on ${tierLite('Lite ESP-only tier page')} and keep a much quieter footprint on a server.`,
   },
   {
     id: 'which-tier-esp',
     topic: 'plans',
     icon: 'faqWhichTierEsp',
     q: 'Which tier do I need for ESP only?',
-    a: `${lite} is awareness only: Player ESP, Loot & Resource ESP, radar, FOV hack and stream-proof overlay. ${pro} adds Aimbot, Soft Aim and No Recoil. ${elite} adds farm helpers, Skin Changer and priority patches.`,
+    a: `${tierLite('Lite awareness tier breakdown')} is awareness only: Player ESP, Loot & Resource ESP, radar, FOV hack and stream-proof overlay. ${tierPro('Pro tier with combat modules')} adds Aimbot, Soft Aim and No Recoil. ${tierElite('Elite tier with farm helpers')} adds farm helpers, Skin Changer and priority patches.`,
     scopes: ['lite'],
   },
   {
@@ -123,7 +123,7 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'scripts',
     icon: 'faqWhichTierScripts',
     q: 'Which tier includes Aimbot and No Recoil?',
-    a: `${pro} ships Aimbot, Soft Aim, Bone Select, Trigger Bot and No Recoil / Spread. ${elite} includes everything in Pro plus Auto Farm Helpers and Skin Changer. ${lite} has no aim assist—it is overlay only.`,
+    a: `${tierPro('Pro combat cheat tier page')} ships Aimbot, Soft Aim, Bone Select, Trigger Bot and No Recoil / Spread. ${tierElite('Elite all-in-one tier page')} includes everything in Pro plus Auto Farm Helpers and Skin Changer. ${tierLite('Lite overlay-only tier page')} has no aim assist—it is overlay only.`,
     scopes: ['pro'],
   },
   {
@@ -147,7 +147,7 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'plans',
     icon: 'faqRankTiers',
     q: 'How do you rank Lite vs Pro vs Elite?',
-    a: `ESP and radar only → ${lite}. Gunfights with aim assist → ${pro}. Full suite, farm helpers and priority patches → ${elite}. Compare on each cheat page, in the ${guideLiteVsPro}, or in the ${faqPage}.`,
+    a: `ESP and radar only → ${tierLite('Shop Lite ESP tier')}. Gunfights with aim assist → ${tierPro('Shop Pro aimbot tier')}. Full suite, farm helpers and priority patches → ${tierElite('Shop Elite full suite')}. Compare on each cheat page, in the ${guideLiteVsPro}, or in the ${faqIndex}.`,
   },
   {
     id: 'elite-slots',
@@ -162,7 +162,7 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'esp',
     icon: 'faqStreamProof',
     q: 'Can OBS capture my overlay?',
-    a: `Stream-proof mode on ${lite}, ${pro} and ${elite} hides overlays from OBS, Discord share and capture cards. Record a short local test before going live. Full steps are in the ${guideStream}.`,
+    a: `Stream-proof mode on ${tierLite('Lite tier with stream-proof overlay')}, ${tierPro('Pro tier with stream-proof mode')} and ${tierElite('Elite tier with stream-proof capture')} hides overlays from OBS, Discord share and capture cards. Record a short local test before going live. Full steps are in the ${guideStream}.`,
   },
   {
     id: 'undetected',
@@ -183,7 +183,7 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'products',
     icon: 'faqHwidWhen',
     q: 'When do I need the HWID Spoofer?',
-    a: `Use ${hwid} when a fresh Steam account gets blocked instantly on one PC but works on another—a hardware-level restriction. It is not for account-only bans; see ${ugc} for appeal workflows instead.`,
+    a: `Use ${hwidLink('HWID Spoofer after a hardware flag')} when a fresh Steam account gets blocked instantly on one PC but works on another—a hardware-level restriction. It is not for account-only bans; see ${ugcLink('UGC ban appeal desk')} for appeal workflows instead.`,
     scopes: ['hwid-spoofer'],
   },
   {
@@ -191,14 +191,14 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'safety',
     icon: 'faqHwidWhen',
     q: 'Do I need a new account and a spoofer after an EAC ban?',
-    a: `Usually both: a new Steam account with Palworld, plus ${hwid} if the ban is tied to your hardware. Read the ${guideHwid} before buying anything, and never reuse the banned account on your main PC.`,
+    a: `Usually both: a new Steam account with Palworld, plus ${hwidLink('HWID Spoofer for hardware bans')} if the ban is tied to your hardware. Read the ${guideHwid} before buying anything, and never reuse the banned account on your main PC.`,
   },
   {
     id: 'ugc-what',
     topic: 'products',
     icon: 'faqUgcWhat',
     q: 'What is UGC?',
-    a: `${ugc} (Unban & Governance Control) is an appeal workspace for Pocketpair and EAC bans and Steam restrictions—custom workflows and case tracking, not a guaranteed unban service.`,
+    a: `${ugcLink('UGC appeal workspace product')} (Unban & Governance Control) is an appeal workspace for Pocketpair and EAC bans and Steam restrictions—custom workflows and case tracking, not a guaranteed unban service.`,
     scopes: ['ugc'],
   },
   {
@@ -206,7 +206,7 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'products',
     icon: 'faqSkinChanger',
     q: 'Does Skin Changer modify my Steam inventory?',
-    a: `${skin} previews weapon skins, clothing and workshop items locally on your client. Other players see your real inventory. Included with ${elite}; available standalone for cosmetic preview only.`,
+    a: `${skinLink('Unlock All Skin Changer utility')} previews weapon skins, clothing and workshop items locally on your client. Other players see your real inventory. Included with ${tierElite('Elite tier including Skin Changer')}; available standalone for cosmetic preview only.`,
     scopes: ['unlock-all'],
   },
   {
@@ -214,35 +214,35 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'products',
     icon: 'faqExternalLoader',
     q: 'Is the loader injected into the Palworld folder?',
-    a: `Palworld Hacks runs external with cloud config sync—no files are written into the Palworld install directory. EAC risk still applies. See the ${guideExternal} and ${productsHub}.`,
+    a: `Palworld Hacks runs external with cloud config sync—no files are written into the Palworld install directory. EAC risk still applies. See the ${guideExternal} and ${link('external loader products hub', ROUTES.products)}.`,
   },
   {
     id: 'blog-vs-cheats',
     topic: 'blog',
     icon: 'faqBlogVsCheats',
     q: 'Are F1 admin commands the same as Palworld cheats?',
-    a: `No. F1 console commands like noclip, god and give only work for admins on servers you own or moderate. Paid Palworld cheats are separate products for live servers—see ${lite}, ${pro} and ${elite}, and the ${guideAdmin}.`,
+    a: `No. F1 console commands like noclip, god and give only work for admins on servers you own or moderate. Paid Palworld cheats are separate products for live servers—see ${tierLite('Lite live-server ESP tier')}, ${tierPro('Pro live-server combat tier')} and ${tierElite('Elite live-server full suite')}, and the ${guideAdmin}.`,
   },
   {
     id: 'blog-setup',
     topic: 'blog',
     icon: 'faqBlogSetup',
     q: 'Where do blog setup guides point for purchase?',
-    a: `Guides link to tier pages and ${productsHub}. Checkout runs through our secure partner—never paste loader files from random Discord DMs. Walkthrough: ${guideBuy}.`,
+    a: `Guides link to tier pages and ${link('Blog-linked products hub', ROUTES.products)}. Checkout runs through our secure partner—never paste loader files from random Discord DMs. Walkthrough: ${guideBuy}.`,
   },
   {
     id: 'compare-plans',
     topic: 'plans',
     icon: 'faqComparePlans',
     q: 'Where do I compare plans side by side?',
-    a: `Each cheat tier page includes a compare table. The ${faqPage} collects product, cheat and blog answers in one place, and the ${guideFeatures} maps every module to a tier.`,
+    a: `Each cheat tier page includes a compare table. The ${link('FAQ compare-plans topic index', ROUTES.faq)} collects product, cheat and blog answers in one place, and the ${guideFeatures} maps every module to a tier.`,
   },
   {
     id: 'who-lite',
     topic: 'plans',
     icon: 'faqWhoLite',
     q: 'Who should stay on Lite?',
-    a: `Players who only want awareness—Player ESP, Loot ESP and radar—and will not touch aim assist. If you keep wanting recoil control, buy ${pro} instead.`,
+    a: `Players who only want awareness—Player ESP, Loot ESP and radar—and will not touch aim assist. If you keep wanting recoil control, buy ${tierPro('Pro tier for recoil control')} instead.`,
     scopes: ['lite'],
   },
   {
@@ -273,7 +273,7 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'setup',
     icon: 'faqEacUpdate',
     q: 'EAC says it failed to initialize—is that a ban?',
-    a: `Usually not. It is most often a broken EAC install, a service conflict or a blocked driver. Verify Palworld files in Steam, reinstall anti-cheat from the Palworld folder and restart before assuming a ban. See the ${guideEacInit}; if it is a real ban, check ${ugc}.`,
+    a: `Usually not. It is most often a broken EAC install, a service conflict or a blocked driver. Verify Palworld files in Steam, reinstall anti-cheat from the Palworld folder and restart before assuming a ban. See the ${guideEacInit}; if it is a real ban, check ${ugcLink('UGC case tracking product')}.`,
   },
   {
     id: 'discord-help',
@@ -287,14 +287,14 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'plans',
     icon: 'faqServerModes',
     q: 'Do tiers work on Official, Community and Modded servers?',
-    a: `Yes—${lite}, ${pro} and ${elite} include presets for Official, Community and Modded servers in the portal. Tune ESP distance, aim FOV and smoothing before your first raid or monument run.`,
+    a: `Yes—${tierLite('Lite Official server presets')}, ${tierPro('Pro Official server presets')} and ${tierElite('Elite Official server presets')} include presets for Official, Community and Modded servers in the portal. Tune ESP distance, aim FOV and smoothing before your first raid or monument run.`,
   },
   {
     id: 'zoom-hack',
     topic: 'esp',
     icon: 'faqZoomHack',
     q: 'Which tier includes FOV Hack?',
-    a: `FOV Hack ships on ${lite} and carries through ${pro} and ${elite}. A wider field of view helps in base fights and open-field PvP, but keep it near the default range so the server does not flag it.`,
+    a: `FOV Hack ships on ${tierLite('Lite tier with FOV hack')} and carries through ${tierPro('Pro tier FOV carryover')} and ${tierElite('Elite tier FOV carryover')}. A wider field of view helps in base fights and open-field PvP, but keep it near the default range so the server does not flag it.`,
     scopes: ['lite'],
   },
   {
@@ -302,7 +302,7 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'esp',
     icon: 'faqWhatIsEsp',
     q: 'What does Loot & Resource ESP highlight?',
-    a: `Crates, barrels, stashes, airdrops, ore and tree nodes, and dropped items—filtered by type and distance. All tiers include it, and the ${guideEsp} explains how to keep the screen readable.`,
+    a: `Crates, barrels, stashes, airdrops, ore and tree nodes, and dropped items—filtered by type and distance. All tiers include it, and the ${link('ESP readability tuning guide', blogPostPath('esp'))} explains how to keep the screen readable.`,
     scopes: ['lite', 'pro', 'elite'],
   },
   {
@@ -310,7 +310,7 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'scripts',
     icon: 'faqAutoFarm',
     q: 'Which tier includes Auto Farm Helpers?',
-    a: `Auto Farm Helpers for resource and loot routes are ${elite} only. ${pro} covers aim assist without farm automation.`,
+    a: `Auto Farm Helpers for resource and loot routes are ${tierElite('Elite Auto Farm Helpers tier')} only. ${tierPro('Pro tier without farm automation')} covers aim assist without farm automation.`,
     scopes: ['elite'],
   },
   {
@@ -325,7 +325,7 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'all',
     icon: 'faqMore',
     q: 'Where is the full FAQ?',
-    a: `This site includes landing FAQs and per-page sections. See the ${faqPage} for all product, cheat and blog answers—or read ${blog} for deep guides.`,
+    a: `This site includes landing FAQs and per-page sections. See the ${link('full FAQ topic index', ROUTES.faq)} for all product, cheat and blog answers—or read ${blogHub} for deep guides.`,
   },
 ];
 
@@ -411,7 +411,7 @@ const blogTopicFaqs: Record<string, SiteFaqItem[]> = {
       topic: 'blog',
       icon: 'faqBlogGuideTier',
       q: 'Which tier matches this guide?',
-      a: `ESP and radar guides → ${lite}. Aimbot and recoil guides → ${pro}. Farm helpers and Skin Changer topics → ${elite}.`,
+      a: `ESP and radar guides → ${tierLite('Lite tier for ESP guides')}. Aimbot and recoil guides → ${tierPro('Pro tier for aimbot guides')}. Farm helpers and Skin Changer topics → ${tierElite('Elite tier for farm guides')}.`,
     },
     {
       id: 'blog-guide-status',
@@ -443,7 +443,7 @@ const blogTopicFaqs: Record<string, SiteFaqItem[]> = {
       topic: 'blog',
       icon: 'faqBlogGuideTier',
       q: 'Are all modules in this article on every tier?',
-      a: `No. Lite is ESP, radar and FOV only; ${pro} adds Aimbot, Soft Aim and No Recoil; ${elite} adds farm helpers and Skin Changer. Check the compare table before checkout.`,
+      a: `No. Lite is ESP, radar and FOV only; ${tierPro('Pro tier with aim modules')} adds Aimbot, Soft Aim and No Recoil; ${tierElite('Elite tier with farm modules')} adds farm helpers and Skin Changer. Check the compare table before checkout.`,
     },
   ],
   Updates: [
@@ -481,7 +481,7 @@ const defaultBlogFaqs: SiteFaqItem[] = [
     topic: 'blog',
     icon: 'faqBlogDefault1',
     q: 'Are blog guides official product documentation?',
-    a: `Articles explain workflows and link to ${lite}, ${pro}, ${elite} and ${productsHub}. Feature lists on product pages are authoritative for checkout.`,
+    a: `Articles explain workflows and link to ${tierLite('Lite tier from blog guides')}, ${tierPro('Pro tier from blog guides')}, ${tierElite('Elite tier from blog guides')} and ${link('Authoritative products hub', ROUTES.products)}. Feature lists on product pages are authoritative for checkout.`,
   },
   {
     id: 'blog-default-2',
@@ -509,7 +509,7 @@ export function getBlogFaqs(tag: string, slug: string): SiteFaqItem[] {
       topic: 'esp',
       icon: 'faqBlogSlugEsp',
       q: 'Which tier covers ESP and radar from this article?',
-      a: `${lite} includes Player ESP, Loot & Resource ESP, radar and FOV hack. ${pro} adds aim assist on the same overlay stack.`,
+      a: `${tierLite('Lite ESP modules from this article')} includes Player ESP, Loot & Resource ESP, radar and FOV hack. ${tierPro('Pro aim assist from this article')} adds aim assist on the same overlay stack.`,
     });
   }
   if (slug.includes('script') || slug.includes('combo') || slug.includes('recoil') || slug.includes('aim')) {
@@ -518,7 +518,7 @@ export function getBlogFaqs(tag: string, slug: string): SiteFaqItem[] {
       topic: 'scripts',
       icon: 'faqBlogSlugScripts',
       q: 'Which tier includes the aimbot and recoil modules in this article?',
-      a: `${pro} and ${elite} ship Aimbot, Soft Aim, Bone Select and No Recoil. ${lite} is ESP and radar only.`,
+      a: `${tierPro('Pro recoil modules from this article')} and ${tierElite('Elite recoil modules from this article')} ship Aimbot, Soft Aim, Bone Select and No Recoil. ${tierLite('Lite overlay from this article')} is ESP and radar only.`,
     });
   }
   if (slug.includes('hwid') || slug.includes('ban') || slug.includes('eac')) {
@@ -527,7 +527,7 @@ export function getBlogFaqs(tag: string, slug: string): SiteFaqItem[] {
       topic: 'products',
       icon: 'faqBlogSlugHwid',
       q: 'Does this article replace HWID or UGC products?',
-      a: `Recovery and EAC guides complement ${hwid} and ${ugc}—read product pages for workflow scope and realistic outcomes.`,
+      a: `Recovery and EAC guides complement ${hwidLink('HWID Spoofer from ban guides')} and ${ugcLink('UGC desk from ban guides')}—read product pages for workflow scope and realistic outcomes.`,
     });
   }
   if (slug.includes('stream')) {
@@ -545,7 +545,7 @@ export function getBlogFaqs(tag: string, slug: string): SiteFaqItem[] {
       topic: 'products',
       icon: 'faqSkinChanger',
       q: 'Do other players see my changed skins?',
-      a: `No. ${skin} is a local preview on your client; other players see your real inventory.`,
+      a: `No. ${skinLink('Skin Changer local preview product')} is a local preview on your client; other players see your real inventory.`,
     });
   }
 
