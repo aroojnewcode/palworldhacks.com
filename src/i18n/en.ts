@@ -9,7 +9,7 @@ export const en: Translations = {
   site: {
     name: 'Palworld Hacks',
     domain: 'palworldhacks.com',
-    title: 'Pal Esp – Buy Palworld Hacks & Cheats 2026',
+    title: 'Pal Esp – Buy Palworld Hacks & | Meet the palworldhacks',
     description:
       'Shop undetected Palworld cheats for Steam PC—player ESP, loot ESP, soft aim, no recoil and stream-proof overlays. Compare Lite, Pro and Elite at.',
     discord: PRIMARY_CHECKOUT_PATH,
@@ -315,7 +315,7 @@ export const en: Translations = {
     eyebrow: 'Blog',
     title: 'Palworld Cheat Buy Guides',
     subtitle: 'Tier comparison guides, ESP and aimbot module explainers, and checkout walkthroughs—pick a plan with confidence.',
-    latestTitle: 'Palworld Hacks blog — Lite & Elite ESP and Aimbot modules',
+    latestTitle: 'Palworld Hacks blog — Lite & Elite ESP and Aimbot modules — Checkout',
     latestSubtitle: 'Transactional guides to help you choose a tier and complete secure checkout for ESP, aimbot and utilities.',
     filterAll: 'All articles',
     sortLabel: 'Sort by',
@@ -626,7 +626,7 @@ export const en: Translations = {
   },
   legalPages: {
     about: {
-      title: 'About palworldhacks — Meet Our Palworld Hacks Store (Steam PC)',
+      title: 'About palworldhacks — Meet our cheats store (Palworld Hacks, Steam PC)',
       description:
         'Meet the team behind palworldhacks.com—the cheats store for undetected ESP, aimbot and Steam PC utilities, with update-day delivery and Discord help after checkout.',
       sections: [

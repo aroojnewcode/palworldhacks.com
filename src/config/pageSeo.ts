@@ -10,9 +10,9 @@ export interface PageSeoEntry {
 
 export const PAGE_SEO: Record<string, PageSeoEntry> = {
   '/': {
-    title: 'Pal Esp – Buy Palworld Hacks & Cheats 2026',
+    title: 'Pal Esp – Buy Palworld Hacks & | Meet the palworldhacks',
     description:
-      'Shop undetected Palworld cheats for Steam PC—Pal ESP, loot ESP, soft aim, no recoil and stream-proof overlays. Compare Lite, Pro and Elite at.',
+      'Pal ESP for Steam PC—shop undetected Palworld cheats with loot ESP, soft aim, no recoil and stream-proof overlays. Compare Lite, Pro and Elite.',
   },
   '/products/palworld-cheats/': {
     title: 'All Palworld Cheat Products | Lite, Pro, Elite Hub',
@@ -70,7 +70,7 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
       'Read verified Palworld Hacks reviews for Elite ESP and aimbot, HWID Spoofer, UGC recovery and Skin Changer—real buyer ratings before you checkout.',
   },
   '/faq/': {
-    title: 'Faq – Palworld Tiers, Checkout & Ban Risk | Hacks',
+    title: 'Faq – Palworld Tiers, Checkout & | Meet the palworldhacks',
     description:
       'FAQ before you buy: Windows and Steam setup, Lite vs Pro vs Elite, ban risk, checkout delivery and HWID resets—clear answers on palworldhacks.com.',
   },
@@ -107,12 +107,12 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
   '/blog/buy-guide/': {
     title: 'Palworld checkout buy guide: Lite, Pro & E | Hacks',
     description:
-      'Step-by-step Palworld checkout: choose Lite, Pro or Elite, pay securely and unlock the operator portal for loader download.',
+      'Buy guide: step-by-step Palworld checkout—choose Lite, Pro or Elite, pay securely and unlock the operator portal for loader download.',
   },
   '/blog/features/': {
-    title: 'Palworld Hacks cheat features by tier: ESP',
+    title: 'Features – Palworld Hacks by tier | Meet the palworldhacks',
     description:
-      'Feature map for Palworld cheats: ESP, aimbot, no recoil, farm helpers and Skin Changer by Lite, Pro and Elite before you buy.',
+      'Features by tier for Palworld cheats—ESP, aimbot, no recoil, farm helpers and Skin Changer on Lite, Pro and Elite before you buy.',
   },
   '/privacy/': {
     title: 'Privacy Policy | Data, Cookies & Your Rights',

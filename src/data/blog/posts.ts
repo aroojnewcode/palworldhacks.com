@@ -343,7 +343,7 @@ export const blogPosts: BlogPostFull[] = [
   },
   {
     tag: "Setup",
-    title: "Buy Palworld aimbot & no recoil: Pro tier combat tools | Hacks",
+    title: "Aimbot – Bone Select and No Recoil: Pro tier combat tools | Hacks",
     slug: "aimbot",
     image: palworldBlogImage('aimbot'),
     desc: "Buy Palworld aimbot and no recoil with Pro tier. See what Aimbot, Soft Aim, Bone Select and No Recoil do, then compare tiers and get access.",
