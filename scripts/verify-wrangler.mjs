@@ -14,8 +14,14 @@ if (/html_handling\s*=\s*["']auto["']/i.test(text)) {
   process.exit(1);
 }
 
-if (!/html_handling\s*=\s*["']force-trailing-slash["']/.test(text)) {
-  console.error('verify-wrangler: expected html_handling = "force-trailing-slash"');
+const validHandling =
+  /html_handling\s*=\s*["'](auto-trailing-slash|force-trailing-slash|drop-trailing-slash|none)["']/.exec(
+    text,
+  );
+if (!validHandling) {
+  console.error(
+    'verify-wrangler: set html_handling to auto-trailing-slash, force-trailing-slash, drop-trailing-slash, or none',
+  );
   process.exit(1);
 }
 

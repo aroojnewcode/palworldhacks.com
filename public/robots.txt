@@ -3,7 +3,6 @@ Allow: /
 
 Disallow: /go/
 
-# Do not list Sitemap here — avoids auto-discovery/fetch in Search Console.
-# Submit manually if needed: https://palworldhacks.com/sitemap-index.xml
+Sitemap: https://palworldhacks.com/sitemap.xml
 
 # RSS: https://palworldhacks.com/rss.xml

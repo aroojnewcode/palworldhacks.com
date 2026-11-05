@@ -146,12 +146,12 @@ const indexXml = `<?xml version="1.0" encoding="UTF-8"?>
 `;
 
 fs.writeFileSync(path.join(dist, 'sitemap-index.xml'), indexXml, 'utf8');
+// Standard discovery URL (robots.txt + crawlers expect /sitemap.xml).
+fs.writeFileSync(path.join(dist, 'sitemap.xml'), indexXml, 'utf8');
 
-// Remove Astro monolith + legacy duplicate so GSC only uses the index + 3 child files you submit manually.
-for (const legacy of ['sitemap.xml', 'sitemap-0.xml']) {
-  const legacyPath = path.join(dist, legacy);
-  if (fs.existsSync(legacyPath)) fs.unlinkSync(legacyPath);
-}
+// Remove Astro monolith; keep sitemap.xml (index) + child urlsets.
+const legacyPath = path.join(dist, 'sitemap-0.xml');
+if (fs.existsSync(legacyPath)) fs.unlinkSync(legacyPath);
 
 console.log(
   `Sitemap finalized: ${entries.length} unique URLs (${pageEntries.length} pages, ${blogEntries.length} blog, ${forumEntries.length} forum)`,
