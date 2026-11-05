@@ -3,7 +3,7 @@ import '../../styles/blog-pages.css';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { t } from '../../i18n';
 import { getAllBlogSlugs, getBlogPost, getRelatedBlogPosts } from '../../data/blog';
-import { pageTitle } from '../../config/seo';
+import { normalizeDocumentTitle, pageTitle } from '../../config/seo';
 import { getPageSeoEntry } from '../../config/pageSeo';
 import {
   articleSchema,
@@ -38,7 +38,9 @@ if (!post) {
 
 const postPath = `/blog/${post.slug}/`;
 const seoEntry = getPageSeoEntry(postPath);
-const layoutTitle = seoEntry?.title ?? pageTitle(post.title);
+const layoutTitle = seoEntry?.title
+  ? normalizeDocumentTitle(seoEntry.title)
+  : pageTitle(post.title);
 const layoutDescription = seoEntry?.description ?? post.desc;
 const breadcrumbs = [
   { name: 'Home', path: '/' },

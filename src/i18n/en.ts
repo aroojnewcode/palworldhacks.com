@@ -9,7 +9,7 @@ export const en: Translations = {
   site: {
     name: 'Palworld Hacks',
     domain: 'palworldhacks.com',
-    title: 'Pal Esp – Buy Palworld Hacks & Cheats 2026 | Palworld Hacks',
+    title: 'Pal Esp – Buy Palworld Hacks & Cheats 2026',
     description:
       'Shop undetected Palworld cheats for Steam PC—player ESP, loot ESP, soft aim, no recoil and stream-proof overlays. Compare Lite, Pro and Elite at.',
     discord: PRIMARY_CHECKOUT_PATH,

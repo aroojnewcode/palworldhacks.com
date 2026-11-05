@@ -10,7 +10,7 @@ export interface PageSeoEntry {
 
 export const PAGE_SEO: Record<string, PageSeoEntry> = {
   '/': {
-    title: 'Pal Esp – Buy Palworld Hacks & Cheats 2026 |',
+    title: 'Pal Esp – Buy Palworld Hacks & Cheats 2026',
     description:
       'Shop undetected Palworld cheats for Steam PC—Pal ESP, loot ESP, soft aim, no recoil and stream-proof overlays. Compare Lite, Pro and Elite at.',
   },
@@ -87,7 +87,7 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
   '/blog/aimbot/': {
     title: 'Aimbot – Bone Select and No Recoil | Palworld Hacks',
     description:
-      'Aimbot guide for Palworld Pro tier: Soft Aim, Bone Select, Trigger Bot and No Recoil—compare modules, then checkout securely.',
+      'aimbot and no recoil for Palworld Pro tier—Bone Select, Soft Aim, Trigger Bot and recoil control before secure checkout.',
   },
   '/blog/cheat-codes/': {
     title: 'Palworld console codes vs live-server load | Hacks',
@@ -110,7 +110,7 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
       'Step-by-step Palworld checkout: choose Lite, Pro or Elite, pay securely and unlock the operator portal for loader download.',
   },
   '/blog/features/': {
-    title: 'Palworld Hacks cheat features by tier: ESP |',
+    title: 'Palworld Hacks cheat features by tier: ESP',
     description:
       'Feature map for Palworld cheats: ESP, aimbot, no recoil, farm helpers and Skin Changer by Lite, Pro and Elite before you buy.',
   },
