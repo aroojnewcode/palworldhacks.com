@@ -201,7 +201,7 @@ export const blogPosts: BlogPostFull[] = [
         text: "Compare Lite, Pro and Elite, then get access through secure checkout at palworldhacks.com.",
         href: "/go/palworld/",
       },
-      { type: 'p', text: "Third-party software carries ban risk. Check the live status banner and keep presets conservative." },
+      { type: 'p', text: "Third-party software carries ban risk. Check the live status banner and keep presets conservative. [Compare every module on the products hub](/products/palworld-cheats/) → [Finish payment through secure checkout](/go/palworld/)." },
     ],
   },
   {
@@ -338,7 +338,7 @@ export const blogPosts: BlogPostFull[] = [
         text: "Full suite, farm helpers and priority patches through secure checkout.",
         href: "/go/palworld/",
       },
-      { type: 'p', text: "Still deciding? [Compare tiers](/products/palworld-cheats/) and [get access](/go/palworld/). Every tier carries ban risk; follow the [EAC patch day checklist](/blog/eac-patch/)." },
+      { type: 'p', text: "Still deciding? [Review Lite, Pro and Elite on the products hub](/products/palworld-cheats/) and [continue through secure checkout](/go/palworld/). Every tier carries ban risk; follow the [EAC patch day checklist](/blog/eac-patch/)." },
     ],
   },
   {

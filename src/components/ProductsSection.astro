@@ -16,6 +16,15 @@ import {
 
 const s = t.products;
 
+const checkoutLabelByProductSlug: Record<string, string> = {
+  lite: 'Checkout Lite ESP tier',
+  pro: 'Checkout Pro combat tier',
+  elite: 'Checkout Elite full suite',
+  'hwid-spoofer': 'Checkout HWID spoofer utility',
+  ugc: 'Checkout UGC recovery desk',
+  'unlock-all': 'Checkout Unlock All skins',
+};
+
 function cardIcon(product: (typeof productPages)[number]) {
   if (product.kind === 'tier') {
     return cheatTierIcons[product.name] ?? 'crosshair';
@@ -60,7 +69,7 @@ function cardLabel(product: (typeof productPages)[number]) {
                       icon={cardIcon(product)}
                       badge={product.badge}
                       variant={product.variant}
-                      buyLabel="Get access"
+                      buyLabel={checkoutLabelByProductSlug[product.slug] ?? 'Get portal access via checkout'}
                       viewLabel="View details"
                       maxFeatures={5}
                     />

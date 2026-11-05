@@ -12,9 +12,10 @@ const LINK_SETS: Record<string, SeoContextLink[]> = {
     { href: '/products/palworld-cheats/pro/', label: 'Pro aimbot and no recoil page' },
     { href: '/blog/buy-guide/', label: '2026 Palworld checkout buy guide' },
     { href: '/blog/features/', label: 'Tier features module reference' },
+    { href: '/forum/', label: 'Palworld buyer forum index hub' },
     { href: '/forum/choose-tier/', label: 'Forum thread: choosing Lite vs Pro' },
     { href: '/sitemap.xml', label: 'XML sitemap index for crawlers' },
-    { href: '/sitemap-blog.xml', label: 'Blog articles XML sitemap file' },
+    { href: '/sitemap-forum.xml', label: 'Forum threads XML sitemap listing' },
   ],
   '/faq/': [
     { href: '/about/', label: 'About palworldhacks storefront page' },
@@ -40,6 +41,7 @@ const LINK_SETS: Record<string, SeoContextLink[]> = {
     { href: '/blog/buy-guide/', label: 'Lite, Pro, Elite checkout walkthrough' },
     { href: '/blog/features/', label: 'Cheat features explained by tier' },
     { href: '/products/palworld-cheats/elite/', label: 'Elite full-suite product listing' },
+    { href: '/forum/', label: 'Community forum Q&A index' },
     { href: '/forum/pre-install/', label: 'Forum thread: pre-install checklist' },
     { href: '/about/', label: 'Meet palworldhacks store background' },
     { href: '/sitemap-blog.xml', label: 'Blog posts XML sitemap file' },
@@ -95,9 +97,10 @@ const LINK_SETS: Record<string, SeoContextLink[]> = {
 const DEFAULT_LINKS: SeoContextLink[] = [
   { href: '/products/palworld-cheats/', label: 'Palworld cheat products directory' },
   { href: '/blog/', label: 'Checkout and tier blog guides hub' },
+  { href: '/forum/', label: 'Buyer forum threads directory' },
   { href: '/faq/', label: 'Tier and checkout FAQ index page' },
   { href: '/sitemap.xml', label: 'Site XML sitemap index file' },
-  { href: '/sitemap-pages.xml', label: 'Static pages XML sitemap file' },
+  { href: '/sitemap-forum.xml', label: 'Forum XML sitemap index file' },
 ];
 
 export function getSeoContextLinks(pathname: string): SeoContextLink[] {
