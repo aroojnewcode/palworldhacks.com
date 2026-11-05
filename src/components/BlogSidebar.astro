@@ -88,6 +88,17 @@ const defaultProductLinks: { label: string; href: string; icon: IconName }[] = [
   { label: 'UGC', href: productPath('ugc'), icon: 'sidebarUgc' },
 ];
 
+const checkoutLabelBySlug: Record<string, string> = {
+  aimbot: 'Checkout Pro aimbot tier',
+  features: 'Checkout after comparing features',
+  'buy-guide': 'Open checkout from buy guide',
+  bones: 'Checkout with weapon profiles',
+  'cheat-codes': 'Checkout live-server loader',
+  'console-tips': 'Checkout for live ESP tier',
+};
+
+const sidebarCheckoutLabel = checkoutLabelBySlug[post.slug] ?? 'Get portal access via checkout';
+
 const productLinks = productLinksBySlug[post.slug] ?? defaultProductLinks;
 ---
 
@@ -175,7 +186,7 @@ const productLinks = productLinksBySlug[post.slug] ?? defaultProductLinks;
       aria-label={t.ui.checkoutAria}
       {...externalLinkProps(checkoutPath('palworld'))}
     >
-      <span class="truncate">Get access</span>
+      <span class="truncate">{sidebarCheckoutLabel}</span>
       <Icon name="arrowRight" size={16} class="shrink-0" />
     </Button>
   </section>

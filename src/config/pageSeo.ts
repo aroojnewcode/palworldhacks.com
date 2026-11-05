@@ -6,6 +6,8 @@
 export interface PageSeoEntry {
   title: string;
   description: string;
+  /** Optional document H1 when it should differ from blog post title or i18n default. */
+  h1?: string;
 }
 
 export const PAGE_SEO: Record<string, PageSeoEntry> = {
@@ -88,6 +90,7 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
     title: 'Aimbot – Bone Select and No Recoil | Palworld Hacks',
     description:
       'aimbot and no recoil for Palworld Pro tier—Bone Select, Soft Aim, Trigger Bot and recoil control before secure checkout.',
+    h1: 'Palworld Aimbot – Bone Select and No Recoil: Pro tier combat tools | Hacks',
   },
   '/blog/cheat-codes/': {
     title: 'Palworld console codes vs live-server load | Hacks',
@@ -113,6 +116,7 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
     title: 'Features – Palworld Hacks by tier | Meet the palworldhacks',
     description:
       'Features by tier for Palworld cheats—ESP, aimbot, no recoil, farm helpers and Skin Changer on Lite, Pro and Elite before you buy.',
+    h1: 'Meet palworldhacks — Palworld Hacks cheat features by tier: ESP, aimbot, no recoil & skins',
   },
   '/privacy/': {
     title: 'Privacy Policy | Data, Cookies & Your Rights',

@@ -25,7 +25,7 @@ export const en: Translations = {
   hero: {
     status: 'Palworld — anti-cheat build online',
     eyebrow: 'Undetected Palworld Hacks & Cheats',
-    title: 'Undetected Palworld Hacks & Cheats 2026 — Pal ESP, Aimbot & Steam PC Tools',
+    title: 'Meet palworldhacks — Undetected Palworld Hacks & Cheats 2026 — Pal ESP, Aimbot & Steam PC Tools',
     subtitle:
       'Buy undetected Palworld cheats for co-op and PvP on Steam—Pal ESP, loot and base ESP, soft aim and no recoil. Compare Lite, Pro and Elite, then checkout for instant loader access.',
     ctaPrimary: 'Get access',
@@ -572,7 +572,7 @@ export const en: Translations = {
   },
   faq: {
     eyebrow: 'FAQ',
-    title: 'Palworld Hacks FAQ — Tiers, Checkout & EAC Risk',
+    title: 'Meet palworldhacks — Palworld Hacks FAQ — Tiers, Checkout & EAC Risk',
     subtitle: 'Clear answers on Palworld cheat tiers, EAC risk, Windows support and how checkout delivery works.',
     items: [
       {

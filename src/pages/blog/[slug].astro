@@ -42,6 +42,7 @@ const layoutTitle = seoEntry?.title
   ? normalizeDocumentTitle(seoEntry.title)
   : pageTitle(post.title);
 const layoutDescription = seoEntry?.description ?? post.desc;
+const articleH1 = seoEntry?.h1 ?? post.title;
 const breadcrumbs = [
   { name: 'Home', path: '/' },
   { name: 'Blog', path: '/blog/' },
@@ -120,7 +121,7 @@ const published = parseBlogDate(post.date);
           </figure>
 
           <header class="blog-article__header">
-            <h1 class="blog-article__title">{post.title}</h1>
+            <h1 class="blog-article__title">{articleH1}</h1>
             <p class="blog-article__lead">{post.desc}</p>
             {
               post.author && (
