@@ -4,7 +4,8 @@ import path from 'node:path';
 const root = process.cwd();
 const dist = path.join(root, 'dist');
 const source = path.join(dist, 'sitemap-0.xml');
-const siteOrigin = 'https://palworldhacks.com';
+const siteOrigin = (process.env.SITE_ORIGIN || 'https://palworldhacks.com').replace(/\/$/, '');
+const siteHostname = new URL(siteOrigin).hostname;
 const URLSET_NS = 'http://www.sitemaps.org/schemas/sitemap/0.9';
 
 if (!fs.existsSync(source)) {
@@ -51,7 +52,7 @@ function parseUrlBlock(block) {
 function canonicalLoc(loc) {
   const url = new URL(loc);
   url.protocol = 'https:';
-  url.hostname = 'palworldhacks.com';
+  url.hostname = siteHostname;
   url.search = '';
   url.hash = '';
   let pathname = url.pathname;
@@ -149,10 +150,20 @@ fs.writeFileSync(path.join(dist, 'sitemap-index.xml'), indexXml, 'utf8');
 // Standard discovery URL (robots.txt + crawlers expect /sitemap.xml).
 fs.writeFileSync(path.join(dist, 'sitemap.xml'), indexXml, 'utf8');
 
-// Remove Astro monolith; keep sitemap.xml (index) + child urlsets.
-const legacyPath = path.join(dist, 'sitemap-0.xml');
-if (fs.existsSync(legacyPath)) fs.unlinkSync(legacyPath);
+writeUrlset(path.join(dist, 'sitemap-0.xml'), entries);
+
+const publicDir = path.join(root, 'public');
+for (const name of [
+  'sitemap-index.xml',
+  'sitemap.xml',
+  'sitemap-pages.xml',
+  'sitemap-blog.xml',
+  'sitemap-forum.xml',
+  'sitemap-0.xml',
+]) {
+  fs.copyFileSync(path.join(dist, name), path.join(publicDir, name));
+}
 
 console.log(
-  `Sitemap finalized: ${entries.length} unique URLs (${pageEntries.length} pages, ${blogEntries.length} blog, ${forumEntries.length} forum)`,
+  `Sitemap finalized (${siteOrigin}): ${entries.length} unique URLs (${pageEntries.length} pages, ${blogEntries.length} blog, ${forumEntries.length} forum)`,
 );

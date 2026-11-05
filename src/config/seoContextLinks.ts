@@ -92,6 +92,24 @@ const LINK_SETS: Record<string, SeoContextLink[]> = {
     { href: '/forum/spray-safe/', label: 'Forum thread: safe spray practice tips' },
     { href: '/sitemap-blog.xml', label: 'Blog sitemap for console guides' },
   ],
+  '/forum/': [
+    { href: '/forum/choose-tier/', label: 'Choosing Lite vs Pro tier discussion' },
+    { href: '/forum/esp-setup/', label: 'First-time ESP overlay calibration thread' },
+    { href: '/blog/buy-guide/', label: 'Written checkout buy guide article' },
+    { href: '/products/palworld-cheats/', label: 'Live tier comparison products hub' },
+    { href: '/faq/', label: 'Pre-purchase FAQ answers index' },
+    { href: '/sitemap-forum.xml', label: 'Forum discussions XML sitemap' },
+    { href: '/sitemap-pages.xml', label: 'Static marketing pages sitemap' },
+  ],
+  '/forum/choose-tier/': [
+    { href: '/blog/buy-guide/', label: 'Source article: 2026 checkout buy guide' },
+    { href: '/blog/lite-vs-pro/', label: 'Lite versus Pro feature comparison' },
+    { href: '/products/palworld-cheats/lite/', label: 'Lite tier product modules page' },
+    { href: '/products/palworld-cheats/pro/', label: 'Pro tier combat modules page' },
+    { href: '/products/palworld-cheats/elite/', label: 'Elite full-suite listing page' },
+    { href: '/forum/', label: 'Return to buyer forum index' },
+    { href: '/sitemap-forum.xml', label: 'All forum thread URLs sitemap' },
+  ],
 };
 
 const DEFAULT_LINKS: SeoContextLink[] = [

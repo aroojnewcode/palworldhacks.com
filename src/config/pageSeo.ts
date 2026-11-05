@@ -62,9 +62,16 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
       'Checkout walkthroughs for Palworld cheats—secure payment, tier picks, ESP and aimbot modules. Lite, Pro and Elite guides at palworldhacks.com.',
   },
   '/forum/': {
-    title: 'Buyer Forum Q&A | ESP, Radar & Spoofer Help',
+    title: 'Buyer Forum – ESP and radar setup Q&A from our guides',
     description:
-      'Palworld buyer forum: ESP and radar setup Q&A from our guides—overlay tuning, HWID tools, update readiness and tier picks before checkout.',
+      'Buyer forum: ESP and radar setup Q&A, HWID spoofer help, overlay tuning and tier picks before secure checkout on palworldhacks.com.',
+    h1: 'Buyer Forum — ESP, Radar, Spoofer Help & Utility Q&A',
+  },
+  '/forum/choose-tier/': {
+    title: 'How do I choose the right Palworld hacks tier to buy?',
+    description:
+      'Tier: Pick Lite, Pro or Elite cheat tools by feature set, then follow secure checkout on palworldhacks.com. 48 d/community · Palworld Hacks guide team.',
+    h1: 'Palworld hacks tier: how to choose Lite, Pro or Elite to buy',
   },
   '/reviews/': {
     title: 'Palworld Hacks Reviews | Buyer Ratings & Feedback',
