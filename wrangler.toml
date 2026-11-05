@@ -3,11 +3,7 @@
 name = "palworldhacks-com"
 compatibility_date = "2026-11-05"
 
-[build]
-command = "npm ci && npm run build"
-
-[build.environment]
-SITE_ORIGIN = "https://palworldhacks-com.uroojroziroti.workers.dev"
+# Build locally or in CI before `wrangler deploy` (`npm run deploy` runs build first).
 
 [assets]
 directory = "./dist"
