@@ -29,7 +29,7 @@ export const blogPosts: BlogPostFull[] = [
         ],
       },
       { type: 'h2', text: "Which tier to buy" },
-      { type: 'p', text: "Lite is the entry tier: Player ESP, Loot ESP, radar and FOV hack. Pro adds Aimbot, Soft Aim, Bone Select, No Recoil and Trigger Bot. Elite adds Auto Farm Helpers, the full radar suite, Skin Changer and priority patches. Not sure? Read [Lite vs Pro](/blog/lite-vs-pro/) and then [compare tiers](/products/palworld-cheats/) on the product page." },
+      { type: 'p', text: "Lite is the entry tier: Player ESP, Loot ESP, radar and FOV hack. Pro adds Aimbot, Soft Aim, Bone Select, No Recoil and Trigger Bot. Elite adds Auto Farm Helpers, the full radar suite, Skin Changer and priority patches. Not sure? Read [Lite vs Pro](/blog/lite-vs-pro/) and then [open the tier comparison hub](/products/palworld-cheats/) on the product page." },
       { type: 'h2', text: "Checkout in four steps" },
       {
         type: 'ul',
@@ -49,7 +49,7 @@ export const blogPosts: BlogPostFull[] = [
         text: "Compare Lite, Pro and Elite, then check out securely to run ESP and aimbot on live servers.",
         href: "/go/palworld/",
       },
-      { type: 'p', text: "Next: [compare tiers](/products/palworld-cheats/) and [get access](/go/palworld/), or read the [features guide](/blog/features/) first." },
+      { type: 'p', text: "Next: [review Lite, Pro and Elite modules](/products/palworld-cheats/) and [start secure checkout](/go/palworld/), or read the [features guide](/blog/features/) first." },
     ],
   },
   {
@@ -88,7 +88,7 @@ export const blogPosts: BlogPostFull[] = [
         ],
       },
       { type: 'h2', text: "Compare tiers, then buy" },
-      { type: 'p', text: "Read [Lite vs Pro](/blog/lite-vs-pro/) for the closest decision, the [Elite tier guide](/blog/elite/) for the full suite, and the [features guide](/blog/features/) for every module. Then [compare tiers](/products/palworld-cheats/) and [get access](/go/palworld/)." },
+      { type: 'p', text: "Read [Lite vs Pro](/blog/lite-vs-pro/) for the closest decision, the [Elite tier guide](/blog/elite/) for the full suite, and the [features guide](/blog/features/) for every module. Then [pick your tier on the products hub](/products/palworld-cheats/) and [open checkout](/go/palworld/)." },
       {
         type: 'cta',
         title: "Upgrade to live-server tools",
@@ -153,7 +153,7 @@ export const blogPosts: BlogPostFull[] = [
     featured: true,
     author: "Palworld Hacks Editorial",
     body: [
-      { type: 'p', text: "This features guide maps every module in our external suite for Steam PC to the tier that includes it—ESP, aimbot, no recoil, utilities—so you can decide what to buy before checkout. Admin console commands are a different thing—they do not equal live-server loaders. To run ESP and aimbot on Official and Community servers, [compare tiers](/products/palworld-cheats/) and get access." },
+      { type: 'p', text: "This features guide maps every module in our external suite for Steam PC to the tier that includes it—ESP, aimbot, no recoil, utilities—so you can decide what to buy before checkout. Admin console commands are a different thing—they do not equal live-server loaders. To run ESP and aimbot on Official and Community servers, [see tier modules on the products page](/products/palworld-cheats/) and continue through checkout." },
       { type: 'h2', text: "Features by tier" },
       {
         type: 'table',
@@ -379,7 +379,7 @@ export const blogPosts: BlogPostFull[] = [
         text: "Aimbot, Soft Aim and No Recoil for live PvP—secure checkout at palworldhacks.com.",
         href: "/go/palworld/",
       },
-      { type: 'p', text: "[Compare tiers](/products/palworld-cheats/) → [Get access](/go/palworld/). No setting is ban-proof; humanized values reduce reports." },
+      { type: 'p', text: "[Open the tier comparison hub](/products/palworld-cheats/) → [Continue to secure checkout](/go/palworld/). No setting is ban-proof; humanized values reduce reports." },
     ],
   },
   {
@@ -611,7 +611,7 @@ export const blogPosts: BlogPostFull[] = [
         text: "Lite, Pro and Elite ship through secure checkout at palworldhacks.com.",
         href: "/go/palworld/",
       },
-      { type: 'p', text: "[Compare tiers](/products/palworld-cheats/) → [Get access](/go/palworld/). Software for Palworld carries ban risk; read the terms and live status before you buy." },
+      { type: 'p', text: "[See live tier pricing](/products/palworld-cheats/) → [Open secure checkout](/go/palworld/). Software for Palworld carries ban risk; read the terms and live status before you buy." },
     ],
   },
   {
@@ -651,7 +651,7 @@ export const blogPosts: BlogPostFull[] = [
         text: "Aimbot, Bone Select and No Recoil profiles—secure checkout at palworldhacks.com.",
         href: "/go/palworld/",
       },
-      { type: 'p', text: "[Compare tiers](/products/palworld-cheats/) → [Get access](/go/palworld/). Treat every value as a starting point; aim assist carries ban risk." },
+      { type: 'p', text: "[Review Lite, Pro and Elite pricing](/products/palworld-cheats/) → [Start checkout for portal access](/go/palworld/). Treat every value as a starting point; aim assist carries ban risk." },
     ],
   },
   {

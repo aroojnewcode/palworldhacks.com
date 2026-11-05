@@ -15,6 +15,8 @@ import {
 import { PALWORLD_FAVICON_URL } from '../config/media';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import SeoContextLinks from '../components/SeoContextLinks.astro';
+import SeoShareLinks from '../components/SeoShareLinks.astro';
 import JsonLd from '../components/JsonLd.astro';
 import responsiveDocumentCss from '../styles/responsive-document.css?raw';
 
@@ -147,6 +149,8 @@ const robotsContent = noindex
     <Header />
     <main id="main-content">
       <slot />
+      <SeoContextLinks pathname={Astro.url.pathname} />
+      <SeoShareLinks pageTitle={title} pathname={Astro.url.pathname} />
     </main>
     <Footer />
     <script>

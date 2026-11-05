@@ -10,7 +10,7 @@ export interface PageSeoEntry {
 
 export const PAGE_SEO: Record<string, PageSeoEntry> = {
   '/': {
-    title: 'Pal Esp – Buy Palworld Hacks & Cheats 2026 | Palworld Hacks',
+    title: 'Pal Esp – Buy Palworld Hacks & Cheats 2026 |',
     description:
       'Shop undetected Palworld cheats for Steam PC—Pal ESP, loot ESP, soft aim, no recoil and stream-proof overlays. Compare Lite, Pro and Elite at.',
   },
@@ -70,7 +70,7 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
       'Read verified Palworld Hacks reviews for Elite ESP and aimbot, HWID Spoofer, UGC recovery and Skin Changer—real buyer ratings before you checkout.',
   },
   '/faq/': {
-    title: 'Faq – Palworld Tiers, Checkout & Ban Risk | Palworld Hacks',
+    title: 'Faq – Palworld Tiers, Checkout & Ban Risk | Hacks',
     description:
       'FAQ before you buy: Windows and Steam setup, Lite vs Pro vs Elite, ban risk, checkout delivery and HWID resets—clear answers on palworldhacks.com.',
   },
@@ -85,9 +85,9 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
       'Meet the palworldhacks.com cheats store team—tiers, utilities, update-day loader updates and Discord help after checkout on Steam PC.',
   },
   '/blog/aimbot/': {
-    title: 'Buy Palworld aimbot & no recoil: Pro tier | Hacks',
+    title: 'Aimbot – Bone Select and No Recoil | Palworld Hacks',
     description:
-      'Buy Palworld aimbot and no recoil with Pro tier. See Aimbot, Soft Aim, Bone Select and No Recoil, then compare tiers and checkout.',
+      'Aimbot guide for Palworld Pro tier: Soft Aim, Bone Select, Trigger Bot and No Recoil—compare modules, then checkout securely.',
   },
   '/blog/cheat-codes/': {
     title: 'Palworld console codes vs live-server load | Hacks',
@@ -103,6 +103,16 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
     title: 'Palworld Hacks Discord Support | Loader Help Tickets',
     description:
       'Discord support for loader errors, HWID Spoofer setup and checkout—open a ticket with your order ID, issue type and screenshots for fast help.',
+  },
+  '/blog/buy-guide/': {
+    title: 'Palworld checkout buy guide: Lite, Pro & E | Hacks',
+    description:
+      'Step-by-step Palworld checkout: choose Lite, Pro or Elite, pay securely and unlock the operator portal for loader download.',
+  },
+  '/blog/features/': {
+    title: 'Palworld Hacks cheat features by tier: ESP |',
+    description:
+      'Feature map for Palworld cheats: ESP, aimbot, no recoil, farm helpers and Skin Changer by Lite, Pro and Elite before you buy.',
   },
   '/privacy/': {
     title: 'Privacy Policy | Data, Cookies & Your Rights',

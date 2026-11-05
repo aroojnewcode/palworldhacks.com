@@ -26,6 +26,7 @@ const defaultLinks: LinkItem[] = [
 const { title = 'Shop Palworld cheats & guides', links = defaultLinks } = Astro.props;
 const checkout = checkoutPath('palworld');
 const checkoutAttrs = externalLinkProps(checkout);
+const checkoutLabel = 'Open secure checkout';
 ---
 
 <aside class="mt-12 rounded-xl border border-border bg-muted/20 p-6" aria-labelledby="seo-related-links-title">
@@ -38,6 +39,6 @@ const checkoutAttrs = externalLinkProps(checkout);
     ))}
   </ul>
   <div class="mt-6">
-    <Button as="a" href={checkout} variant="primary" size="sm" {...checkoutAttrs}>Get access</Button>
+    <Button as="a" href={checkout} variant="primary" size="sm" {...checkoutAttrs}>{checkoutLabel}</Button>
   </div>
 </aside>
